@@ -1,0 +1,49 @@
+#hamnav {
+    width: 100%;
+    
+    position: sticky;
+    top: 0;
+  }
+  
+  /* แสดงรูปแบบแนวนอน */
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    font-family: 'Callie Chalk Font', sans-serif;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover { background: #282525; }
+  
+  /* ซ่อนแฮมเบอร์เกอร์ */
+  #hamnav label, #hamburger { display: none; }
+  
+  /* responsive*/
+  @media screen and (max-width: 768px){
+    /* ทำเป็นรูปแบบแฮมเบอร์เกอร์ แสดงผลเป็นรูปแบบ block */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+  
+    /*แสดงไอค่อน */
+    #hamnav label {
+      display: inline-block;
+      color: white;
+      
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* การกดแสดงและซ่อน */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+  

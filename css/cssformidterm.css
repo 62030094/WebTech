@@ -1,0 +1,35 @@
+
+ /*import ฟ้อนจาก url ที่กำหนด*/
+ @import url('http://fonts.cdnfonts.com/css/callie-chalk-font');
+/*ปรับheader กำหนดสี ฟ้อน*/
+header{
+    
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Callie Chalk Font', sans-serif;
+    
+}
+ /*ตั้งความห่าง และกำหนดให้ตำแหน่งแสดงผลเป็นอิสระ*/
+main{
+    
+    margin: 12%;
+    position: absolute;
+      
+}
+/*responsive ขนาดฟ้อน*/
+.text-box{
+    font-family: 'Callie Chalk Font', sans-serif;
+    
+    color: white;
+    
+    font-size: 2.5vw;
+
+}
+/*ตั้งค่ารูปพื้นหลัง*/
+html{
+    background: url(../img/backwall.jpg);
+    background-repeat: inherit;
+    background-size: cover;
+    
+}

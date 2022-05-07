@@ -1,0 +1,136 @@
+ /*import ฟ้อนจาก url ที่กำหนด*/
+@import url('http://fonts.cdnfonts.com/css/sunday-personal-use');
+nav{
+    
+    
+    margin: 5px;
+    padding: 10px 5px;
+}
+
+
+
+
+/*ปรับheader กำหนดสี ฟ้อน*/
+header{
+    margin-left: 63%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+    
+/*แสดงเป็นรูปแบบflex*/
+main{
+    display: flex;
+    
+    
+}
+article{
+    display: grid;
+    
+    
+}
+#ID{
+    margin: 5%;
+    
+    width: 25%;
+}
+/*responsive*/
+@media screen and (min-width: 1000px){
+.myprofile{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+/*ตั้งค่าพื้นหลัง กำหนดฟ้อน สี */
+html{
+    background: url(../img/backg.jpg);
+    background-repeat: inherit;
+    background-size: cover;
+    font-family: 'SUNDAY Personal use', sans-serif;
+    font-size: 150%;
+    color: rgb(255, 255, 255);
+    
+}
+.photo{
+    margin: auto;
+}
+.myimg{
+    
+    margin-top: 50%;
+    
+}
+
+
+
+section{
+    
+    margin: 2%;
+}
+
+aside{
+    
+    margin: 5%;
+    
+    width: 25%;
+    font-weight: bold;
+    font-size: 20px;
+}
+img{
+    width: 80%;
+    height: 80%;
+}
+
+/*responsive*/
+@media screen and (max-width: 600px){
+    main{
+        display: grid;
+        
+        
+    }
+    header{
+        margin-left: 40%;
+        font-size: 30px;
+        font-weight: bold;
+       
+    }
+    .photo{
+        margin-right: 30%;
+        
+    }
+    
+    
+    
+    
+}
+/*responsive*/
+@media screen and (max-width: 1000px){
+    article{
+        
+        display: grid
+    }
+    .myimg{
+        margin-top: 10%;
+        margin-left: 32%;
+    }
+    
+    
+    
+        
+    
+}
+/*responsive*/
+@media screen and (max-width: 768px){
+    header{
+        margin-left: 40%;
+        
+       
+    }
+}
+
+footer{
+    
+    font-weight: bold;
+    text-align: center;
+  }
